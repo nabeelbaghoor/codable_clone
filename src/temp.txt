@@ -1,0 +1,29 @@
+<script>
+
+import DevelopersVue from './components/Developers.vue';
+
+import FirstParaVue from './components/FirstPara.vue';
+import FooterVue from './components/Footer.vue';
+import Mynavbar from "./components/Mynavbar.vue";
+
+const webdescrip =require( "./webdiscrip.json")
+const devs =require( "./developers.json")
+const fotnot_ =require( "./footnote.json")
+
+export default {
+    data() {
+    return {
+      message: webdescrip,
+      fotnot:fotnot_,
+      mydevs_:devs.developers
+    }
+  },
+  components: {
+    Mynavbar,
+    FirstParaVue,
+    DevelopersVue,
+    FooterVue
+   
+}
+}
+</script>
